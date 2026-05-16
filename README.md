@@ -170,7 +170,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/khazna.git
+git clone https://github.com/3mrRabie/khazna.git
 cd khazna
 
 # Create a virtual environment (recommended)
@@ -384,7 +384,7 @@ Contributions are welcome! Whether it's bug fixes, new features, or documentatio
 ### Development Setup
 
 ```bash
-git clone https://github.com/your-username/khazna.git
+git clone https://github.com/3mrRabie/khazna.git
 cd khazna
 python -m venv .venv
 .venv\Scripts\activate  # or source .venv/bin/activate
