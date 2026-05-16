@@ -1,0 +1,24 @@
+module khazna
+
+singleton Theme 1.0 Theme.qml
+
+TitleBar              1.0 TitleBar.qml
+WindowResizeHandle    1.0 WindowResizeHandle.qml
+LoginScreen           1.0 LoginScreen.qml
+DashboardScreen       1.0 DashboardScreen.qml
+Sidebar               1.0 Sidebar.qml
+EntryTable            1.0 EntryTable.qml
+EntryDialog           1.0 EntryDialog.qml
+PasswordGenDialog     1.0 PasswordGenDialog.qml
+AuditLogDialog        1.0 AuditLogDialog.qml
+ChangePasswordDialog  1.0 ChangePasswordDialog.qml
+BackupDialog          1.0 BackupDialog.qml
+HealthDashboard       1.0 HealthDashboard.qml
+RecoveryDialog        1.0 RecoveryDialog.qml
+StrengthBar           1.0 StrengthBar.qml
+StatusToast           1.0 StatusToast.qml
+AutoLockBanner        1.0 AutoLockBanner.qml
+SvButton              1.0 components/SvButton.qml
+SvField               1.0 components/SvField.qml
+SvDialog              1.0 components/SvDialog.qml
+SvLabel               1.0 components/SvLabel.qml

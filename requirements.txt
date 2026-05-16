@@ -1,0 +1,35 @@
+﻿# ──────────────────────────────────────────────────────────────────────────────
+# khazna – Python dependency manifest  (PySide6 / QML edition)
+# ──────────────────────────────────────────────────────────────────────────────
+#
+# Install with:
+#   pip install -r requirements_pyside6.txt
+#
+# Minimum Python version: 3.10
+#   • Required for structural pattern matching (match/case) used in bridge.py
+#   • Required for str | None union syntax used throughout
+#
+# DEP-01 FIX: Added upper-bound pins (<major+1) to prevent silent breakage from
+# future major-version releases that may introduce incompatible API changes.
+# ──────────────────────────────────────────────────────────────────────────────
+
+
+# ── Cryptography ──────────────────────────────────────────────────────────────
+cryptography>=42.0.8,<45.0
+
+
+# ── Qt / PySide6 ──────────────────────────────────────────────────────────────
+# PySide6 ships its own Qt runtime (6.x).
+# Modules used: QtCore, QtGui, QtQml, QtQuick, QtQuickControls2, QtQuickDialogs
+PySide6>=6.7.0,<7.0
+
+
+# ── Clipboard management ─────────────────────────────────────────────────────
+# DEP-02: The Qt GUI layer now uses QGuiApplication.clipboard() natively,
+# making pyperclip optional.  It is retained as a fallback for CLI/non-GUI use.
+#
+# Platform notes (for CLI fallback path only):
+#   Linux:   requires xclip or xsel  (sudo apt install xclip)
+#   macOS:   uses pbcopy/pbpaste – no extra OS package needed
+#   Windows: uses win32 ctypes clipboard API – no extra OS package needed
+pyperclip>=1.8.2,<2.0
