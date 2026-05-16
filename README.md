@@ -40,7 +40,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 </td>
 <td width="50%">
 
-### 🗂 Vault Management
+###  Vault Management
 - Add, edit, delete, and search credentials
 - **Categories** — Social, Finance, Work, Dev, and more
 - **Tags** — flexible cross-category labeling
@@ -147,7 +147,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 </details>
 
 <details>
-<summary><strong>🗝 Recovery Keys</strong></summary>
+<summary><strong> Recovery Keys</strong></summary>
 <br>
 
 <!-- ![Recovery Keys](screenshots/recovery.png) -->
@@ -359,7 +359,7 @@ All communication happens over **localhost only** — no data is sent to externa
 
 ---
 
-## 🗺 Roadmap
+##  Roadmap
 
 - [ ] TOTP / 2FA token storage
 - [ ] Secure file attachments
