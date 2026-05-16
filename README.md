@@ -23,13 +23,13 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 
 ---
 
-## ✨ Features
+##  Features
 
 <table>
 <tr>
 <td width="50%">
 
-### 🔐 Core Security
+###  Core Security
 - **AES-256-GCM** authenticated encryption for all vault data
 - **Scrypt KDF** (N=2¹⁷) — memory-hard key derivation
 - Master password **never stored** — only a derived key
@@ -53,7 +53,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 <tr>
 <td>
 
-### 🛡 Password Health
+###  Password Health
 - **Health Dashboard** — overall vault security score
 - Detect **weak**, **reused**, and **aging** passwords
 - Per-entry strength scoring with actionable tips
@@ -62,7 +62,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 </td>
 <td>
 
-### ⚡ Password Generator
+###  Password Generator
 - Cryptographically secure (CSPRNG via `secrets`)
 - Configurable length (8–64 characters)
 - Toggle uppercase, lowercase, digits, symbols
@@ -74,7 +74,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 <tr>
 <td>
 
-### 💾 Backup & Recovery
+###  Backup & Recovery
 - **Portable V4 backups** — self-contained, restorable anywhere
 - Backup-specific salt — independent of vault database
 - **Recovery keys** — 8 one-time codes for master password reset
@@ -84,7 +84,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 </td>
 <td>
 
-### 🖥 Premium Desktop UI
+###  Premium Desktop UI
 - **QML dark theme** — glassmorphism, micro-animations, depth layers
 - Custom frameless window with drag and resize
 - Sidebar navigation with category and tag filters
@@ -97,12 +97,12 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 > Add your own screenshots to the `screenshots/` directory and update the paths below.
 
 <details>
-<summary><strong>🔓 Login Screen</strong></summary>
+<summary><strong> Login Screen</strong></summary>
 <br>
 
 <!-- ![Login Screen](screenshots/login.png) -->
@@ -111,7 +111,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 </details>
 
 <details>
-<summary><strong>🗂 Main Dashboard</strong></summary>
+<summary><strong> Main Dashboard</strong></summary>
 <br>
 
 <!-- ![Dashboard](screenshots/dashboard.png) -->
@@ -120,7 +120,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 </details>
 
 <details>
-<summary><strong>🛡 Health Dashboard</strong></summary>
+<summary><strong> Health Dashboard</strong></summary>
 <br>
 
 <!-- ![Health Dashboard](screenshots/health.png) -->
@@ -129,7 +129,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 </details>
 
 <details>
-<summary><strong>⚡ Password Generator</strong></summary>
+<summary><strong> Password Generator</strong></summary>
 <br>
 
 <!-- ![Password Generator](screenshots/generator.png) -->
@@ -138,7 +138,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 </details>
 
 <details>
-<summary><strong>💾 Backup & Restore</strong></summary>
+<summary><strong> Backup & Restore</strong></summary>
 <br>
 
 <!-- ![Backup Dialog](screenshots/backup.png) -->
@@ -157,7 +157,7 @@ A privacy-first desktop password manager that keeps your credentials encrypted l
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -210,7 +210,7 @@ Options:
 
 ---
 
-## 📦 Building a Standalone Executable
+##  Building a Standalone Executable
 
 ```bash
 pip install pyinstaller
@@ -221,7 +221,7 @@ The output binary will be at `dist/khazna` (or `dist/khazna.exe` on Windows). Al
 
 ---
 
-## 🔒 Security Model
+##  Security Model
 
 khazna is designed so that **your data never leaves your machine** and your master password is **never stored anywhere**.
 
@@ -264,7 +264,7 @@ This means a backup can be restored on **any machine**, into **any vault**, even
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 ### Technology Stack
 
@@ -337,7 +337,7 @@ khazna/
 
 ---
 
-## 🌐 Browser Extension
+##  Browser Extension
 
 khazna includes a local native messaging server (`extension_server.py`) that allows a companion browser extension to:
 
@@ -349,7 +349,7 @@ All communication happens over **localhost only** — no data is sent to externa
 
 ---
 
-## 🔒 Privacy First
+##  Privacy First
 
 - **Zero cloud** — Your vault exists only on your local disk
 - **No telemetry** — No analytics, no tracking, no network calls (except optional HaveIBeenPwned breach checks via k-anonymity)
@@ -371,7 +371,7 @@ All communication happens over **localhost only** — no data is sent to externa
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Whether it's bug fixes, new features, or documentation improvements.
 
@@ -401,13 +401,13 @@ pytest test_bridge.py test_recovery.py test_csv_dedupe.py -v
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Credits & Technologies
+##  Credits & Technologies
 
 | Technology | Purpose |
 |---|---|
@@ -422,7 +422,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <div align="center">
 
-**Built with 🔐 by a privacy-first developer.**
+**Built with by a privacy-first developer.**
 
 *Your passwords. Your machine. Your rules.*
 
