@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtaf/aCOlC48RZL0UJgzH5EC2dXuvRJRjQqiDOqOaAfgte1EQPUnbIkzeeRsIvkzz7pf8/mJkud2rCYAUcZq40TPZa8MKGLkDYE28hIbpKZewd1bF8QYEWW2CJF6+B+7x7ysrCvtgJAZy2h4xLKb2d+nSALcq9//7WM63v5MvvM9Iey+A8726V3FH99+isOpTBxrJgTNHS+3CPsB7MgOm324Xw5/jVBHdxO4TfAz2Y7d3CjV/NvRAkHiyuVJlRnYr/aEieE1v8u1kVO+55aOjg3NR9QQqpJJSa2FNQN/BEDECDoQCKglTjlSQKUBDjMKos/353WyRLJZjoXFPaMmDYQIDAQAB",
+  "name": "khazna",
+  "version": "1.0.0",
+  "description": "Secure autofill from your local khazna vault. Offline-first, zero-cloud.",
+  "permissions": [
+    "activeTab",
+    "nativeMessaging",
+    "clipboardWrite",
+    "alarms"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

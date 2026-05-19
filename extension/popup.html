@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=380">
+  <link rel="stylesheet" href="popup.css">
+  <title>khazna</title>
+</head>
+<body>
+  <!-- ── Header ──────────────────────────── -->
+  <header id="header">
+    <div class="header-left">
+      <img src="icons/icon32.png" alt="" class="header-icon">
+      <h1>khazna</h1>
+    </div>
+    <div id="status-dot" class="dot dot-offline" title="Checking..."></div>
+  </header>
+
+  <!-- ── Connection Error State ──────────── -->
+  <section id="state-offline" class="state-panel hidden">
+    <div class="state-icon">⚠</div>
+    <p class="state-title">Cannot reach khazna</p>
+    <p class="state-sub">Make sure the desktop app is running.</p>
+  </section>
+
+  <!-- ── Locked State ────────────────────── -->
+  <section id="state-locked" class="state-panel hidden">
+    <div class="state-icon">🔒</div>
+    <p class="state-title">Vault is locked</p>
+    <p class="state-sub">Unlock the desktop app first.</p>
+  </section>
+
+  <!-- ── Unlocked State (main UI) ────────── -->
+  <section id="state-unlocked" class="hidden">
+    <!-- Search -->
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search" placeholder="Search credentials..." autocomplete="off" spellcheck="false">
+    </div>
+
+    <!-- Credentials List -->
+    <div id="logins-list" class="logins-list">
+      <!-- Populated by popup.js -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="empty-state" class="state-panel small hidden">
+      <p class="state-sub">No matching credentials found.</p>
+    </div>
+  </section>
+
+  <!-- ── Footer ──────────────────────────── -->
+  <footer id="footer">
+    <span class="footer-text" id="footer-text">khazna v1.0</span>
+  </footer>
+
+  <!-- ── Toast ───────────────────────────── -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
